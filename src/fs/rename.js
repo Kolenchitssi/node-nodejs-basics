@@ -10,6 +10,7 @@ const rename = async () => {
     console.log("Success rename file");
   } catch (error) {
     console.error("Error rename file", error.message);
+    throw new Error("Error rename file");
   }
 };
 

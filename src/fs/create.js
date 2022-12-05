@@ -7,6 +7,7 @@ const create = async () => {
     console.log("Success create file");
   } catch (error) {
     console.error("Error create file", error.message);
+    throw new Error("Error create file");
   }
 };
 
